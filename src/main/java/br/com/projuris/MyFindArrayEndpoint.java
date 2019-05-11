@@ -15,6 +15,6 @@ public class MyFindArrayEndpoint {
 	@GetMapping
 	public int findArray() {
 		
-		return findArray.findArray(new int[] {4,9,3,7,8}, new int[] {3,7} );
+		return findArray.findArray(new int[] {4,9,3,7,8,3,7,1}, new int[] {3,7} );
 	}
 }
