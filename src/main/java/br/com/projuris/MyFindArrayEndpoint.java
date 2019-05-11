@@ -1,8 +1,9 @@
 package br.com.projuris;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -12,9 +13,9 @@ public class MyFindArrayEndpoint {
 	@Autowired
 	private FindArray findArray;
 	
-	@GetMapping
-	public int findArray() {
+	@RequestMapping(path = "/findArray", method = RequestMethod.GET)
+	public int findArray(@RequestParam int[] array, @RequestParam int[] subArray) {
 		
-		return findArray.findArray(new int[] {4,9,3,7,8,3,7,1}, new int[] {3,7} );
+		return findArray.findArray(array, subArray);
 	}
 }
