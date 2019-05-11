@@ -1,6 +1,8 @@
-package br.com.projuris;
+package br.com.projuris.service;
 
 import org.springframework.stereotype.Service;
+
+import br.com.projuris.repository.FindArray;
 
 @Service
 public class MyFindArray implements FindArray {

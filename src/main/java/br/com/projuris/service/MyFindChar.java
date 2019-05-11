@@ -1,7 +1,9 @@
-package br.com.projuris;
+package br.com.projuris.service;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+
+import br.com.projuris.repository.FindCharachter;
 
 @Service
 public class MyFindChar implements FindCharachter {

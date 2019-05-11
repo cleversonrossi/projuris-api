@@ -1,4 +1,4 @@
-package br.com.projuris;
+package br.com.projuris.repository;
 
 public interface FindArray {
 
