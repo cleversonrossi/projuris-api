@@ -15,10 +15,10 @@ public class MyFindChar implements FindCharachter {
 		char auxChar;
 		int cont = 0;
 		
-		for(int i = 0; i < word.length();i++) {
+		for(int i = 0; i < word.length(); i++) {
 			auxChar = word.charAt(i);
 		
-			for(int j = i+1; j < word.length();j++) {
+			for(int j = i+1; j < word.length(); j++) {
 				if (auxChar==word.charAt(j)) {
 					cont++;
 				}
