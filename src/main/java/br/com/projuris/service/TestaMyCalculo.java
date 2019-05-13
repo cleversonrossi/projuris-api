@@ -40,9 +40,17 @@ public class TestaMyCalculo {
 
 		final List<CustoCargo> custoCargos = calculo.custoPorCargo(listaFuncionario);
 		
-		//final List<CustoDepartamento> custoDepartamentos = calculo.custoPorDepartamento(listaFuncionario);
+		final List<CustoDepartamento> custoDepartamentos = calculo.custoPorDepartamento(listaFuncionario);
+
+		for(CustoCargo custoCargo : custoCargos){
+		    System.out.println("O custo total do cargo " +custoCargo.getCargo() +" é de R$ " +custoCargo.getCusto() );
+		}
 		
-		System.out.println(custoCargos);
+		System.out.println("=====================================================================================================================");
+		
+		for(CustoDepartamento custoDepartamento : custoDepartamentos){
+		    System.out.println("O custo total do departamento " +custoDepartamento.getDepartamento() +" é de R$ " +custoDepartamento.getCusto() );
+		} 
 	}
 
 }
